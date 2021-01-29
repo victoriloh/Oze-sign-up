@@ -1,0 +1,24 @@
+{
+    "signUp": {
+        "phone": "08172287274",
+        "countryCode": "Nigeria",
+        "email": "victor@yopmail.com",
+        "password": "Password1"
+    },
+    "invalid_phone_password": {
+        "phone": "08172287678",
+        "pw": "Password1"
+    },
+    "empty_Phone_Valid_Password": {
+        "pw": "Password1"
+    },
+    "valid_Phone_Empty_Password": {
+        "phone": "08115469079"
+    },
+    "device_Name": {
+        "deviceName": "OZE-TAB"
+    },
+    "build": {
+        "build": "com.daretoinnovate.oze"
+    }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OZETesting" preserve-order="true" thread-count="5">
+	<parameter name="groupReport" value="/oze.html" />
+	<parameter name="server" value="local" />
+	<parameter name="environment" value="chrome" />
+	<parameter name="server" value="local" />
+	<parameter name="dataEnv" value="debugData" />
+	<parameter name="appActivity" value="com.daretoinnovate.oze.presentation.ftue.TutorialsActivity" />
+	<parameter name="appPackage" value="com.daretoinnovate.oze" />
+
+	<test name="Oze" preserve-order="true">
+		<parameter name="systemPort" value="8220" />
+		<parameter name="deviceNo" value="1" />
+		<parameter name="deviceName" value="OZE-TAB" />
+		<classes>
+			<class name="admin.Login">
+				<methods>
+					<include name="navigateToLoginPage" />
+					<include name="emptyPhoneEmptyPasswordTest" />
+					<include name="invalidPhonePasswordTest" />
+					<include name="validPhoneEmptyPasswordTest" />
+					<include name="validPhoneWrongPasswordTest" />
+					<include name="emptyPhoneValidPasswordTest" />
+					<include name="wrongPhoneValidPasswordTest" />
+
+				</methods>
+			</class>
+			<class name="admin.SignUp">
+				<parameter name="user" value="signUp" />
+				<methods>
+					<include name="navigateToSIgnUpPage" />
+					<include name="emptySignUpForm" />
+					<include name="incompleteSignUpForm" />
+					<include name="invalidSignUpForm" />
+					<include name="fillSignUpForm" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
